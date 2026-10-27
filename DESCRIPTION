@@ -1,0 +1,19 @@
+Package: centraldogma
+Type: Package
+Title: Central Dogma
+Version: 0.1.0
+Authors@R: c(
+    person(
+      "Sara", "Bihari",
+      email = "biharisara26@gmail.com",
+      role = c("aut", "cre")
+    )
+    person(
+      "Marie", "Lorenzen",
+      email = "mariekvl@hotmail.com",
+      role = c("aut")
+    ) )
+Description: A package that will replicate the central dogma of molecular biology
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
