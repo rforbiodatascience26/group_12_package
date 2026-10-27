@@ -5,6 +5,9 @@
 #' @returns A plot of the counts of unique amino acids in the given data
 #' @export
 #'
+#' @importFrom ggplot2 ggplot aes geom_col theme_bw theme
+#' @importFrom stringr str_split boundary str_count
+#'
 #' @examples plot_aa_count("PPTTTLQRRN")
 plot_aa_count <- function(aa_data){
   # extracts unique amino acids
