@@ -1,28 +1,23 @@
 Package: centraldogma
-Type: Package
 Title: Central Dogma
 Version: 0.1.0
 Authors@R: c(
-    person(
-      "Sara", "Bihari",
-      email = "biharisara26@gmail.com",
-      role = c("aut", "cre")
-    ),
-    person(
-      "Marie", "Lorenzen",
-      email = "mariekvl@hotmail.com",
-      role = c("aut")
-    ) )
-Description: A package that will replicate the central dogma of molecular biology
+    person("Sara", "Bihari",
+           email = "biharisara26@gmail.com",
+           role = c("aut", "cre")),
+    person("Marie", "Lorenzen",
+           email = "mariekvl@hotmail.com",
+           role = "aut")
+)
+Description: A package that replicates the central dogma of molecular biology.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
-Depends: 
-    R (>= 3.5)
+Depends: R (>= 3.5)
 RoxygenNote: 7.3.2
-Suggests: 
+Suggests:
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-Imports: 
+Imports:
     ggplot2,
     stringr
