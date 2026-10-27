@@ -7,7 +7,7 @@ Authors@R: c(
       "Sara", "Bihari",
       email = "biharisara26@gmail.com",
       role = c("aut", "cre")
-    )
+    ),
     person(
       "Marie", "Lorenzen",
       email = "mariekvl@hotmail.com",
@@ -20,3 +20,6 @@ LazyData: true
 Depends: 
     R (>= 3.5)
 RoxygenNote: 7.3.2
+Suggests: 
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
