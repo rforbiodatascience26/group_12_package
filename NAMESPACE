@@ -3,6 +3,7 @@
 export(create_dna_string)
 export(dna_to_rna)
 export(plot_aa_count)
+export(split_into_codons)
 importFrom(ggplot2,aes)
 importFrom(ggplot2,geom_col)
 importFrom(ggplot2,ggplot)

@@ -8,8 +8,7 @@ Authors@R: c(
            role = c("aut", "cre")),
     person("Marie", "Lorenzen",
            email = "mariekvl@hotmail.com",
-           role = "aut")
-)
+           role = "aut"))
 Description: A package that replicates the central dogma of molecular biology.
 License: MIT + file LICENSE
 Encoding: UTF-8
