@@ -1,0 +1,59 @@
+
+# centraldogma
+
+``` r
+library(centraldogma)
+```
+
+This package mimics the central dogma of molecular biology. It takes a
+piece of DNA, then transcribe it into RNA, and then translate it into a
+protein/string of amino acids.
+
+The first function of the package create_dna_string works by creating
+random DNA sequence of a length determined by the input. Here we input
+30 to get a DNA sequence of length 30:
+
+``` r
+dna_string = create_dna_string(30)
+dna_string
+#> [1] "TGAGGAGTTATGCATCAGCATTCATCTATG"
+```
+
+The second function of the package dna_to_rna is used to substitute the
+“T”s with “U”s in a given DNA string. So reusing the DNA string we just
+created we can convert or DNA to RNA:
+
+``` r
+rna_string = dna_to_rna(dna_string)
+rna_string
+#> [1] "UGAGGAGUUAUGCAUCAGCAUUCAUCUAUG"
+```
+
+The third function of the package split_into_codons creates a character
+vector of codons from an RNA string, where it is possible to change the
+start position or use the default start of 1:
+
+``` r
+codon_vector = split_into_codons(rna_string)
+codon_vector
+#>  [1] "UGA" "GGA" "GUU" "AUG" "CAU" "CAG" "CAU" "UCA" "UCU" "AUG"
+```
+
+The fourth function of the package INSERT_NAME takes a character vector
+of codons and uses the package data codon_table to convert the codons to
+a string of letters symbolizing amino acids:
+
+``` r
+# aa_sequence = INSERT_NAME(codon_vector)
+# aa_sequence
+```
+
+The fifth and final function of the package plot_aa_count takes a string
+input of amino acids, then it counts how many times the present amino
+acids are in the sequence and plots the counts using
+ggplot2::geom_col():
+
+``` r
+# count_plot = plot_aa_count(aa_sequence)
+# count_plot
+```
